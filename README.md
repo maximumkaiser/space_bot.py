@@ -1,11 +1,11 @@
-# space_bot.py
-spacebot
+
+### spacebot
 spacebot is an open sourced discord bot made using nextcord python framework
 
-vision of slothbot
+### vision of slothbot
 the vision of slothbot is to make a fun bot and multipurpose bot
 
-current features
+### current features
 the current features are:-
 
 list all commands
