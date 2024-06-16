@@ -59,6 +59,7 @@ async def help(interaction: nextcord.Interaction):
     embed.add_field(name= "/serverinfo" , value= "shows server info" , inline = True)
     embed.add_field(name= "/rememberemoji" , value= "start a minigame of remember a emoji" , inline = True)
     embed.aintdd_field(name= "/space" , value= "shows todays picture from nasa" , inline = True)eraction.send(embed= embed)
+    embed.aintdd_field(name= "/User Details" , value= "Show details about when a member joined the server" , inline = True)eraction.send(embed= embed)
     await 
 		
 
