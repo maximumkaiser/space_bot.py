@@ -13,5 +13,6 @@ list all commands
 2. motivate you with a quote
 3. do a coinflip
 4. give info about the server
-5. play a minigame of remember the emoji
-6. send the daily picture from NASA(create a API key incase you are forking this)
+5. give info about a user in the server
+6. play a minigame of remember the emoji
+7. send the daily picture from NASA(create a API key incase you are forking this)
