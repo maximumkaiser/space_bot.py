@@ -63,9 +63,8 @@ async def help(interaction: nextcord.Interaction):
 		
 
 @bot.slash_command(name="space_image", description="Get the Astronomy Picture of the Day")
-async def space_image(interaction: nextcord.Interaction):
-    api_key = 'KG06wGKFG4FdXfycoowHOMowe5pQCWcEHbbQei9' 
-    url = f'https://api.nasa.gov/planetary/apod?api_key=KG06wGKFG4FdXfycoowHOMowe5pQCWcEHbbQei9M'
+async def space_image(interaction: nextcord.Interaction): 
+    url = f'https://api.nasa.gov/planetary/apod?api_key={api_key}'
 
     async with aiohttp.ClientSession() as session:
         async with session.get(url) as response:
