@@ -176,6 +176,17 @@ async def rememberemoji(interaction: nextcord.Interaction):
     view.add_item(select)
     
     await interaction.edit_original_message(content='Which one was it?', view=view)
+	
+@bot.slash_command(name="User Details" description="Show details about when a member joined the server")
+async def member_info(interaction: nextcord.Interaction, member: nextcord.Member):
+    joined_at = member.joined_at
+    duration = datetime.now() - joined_at
+    embed = nextcord.Embed(title=f"{member.display_name}'s Server Info", color=0x00ff00)
+    embed.add_field(name="Joined On", value=joined_at.strftime('%Y-%m-%d %H:%M:%S'), inline=False)
+    embed.add_field(name="Time in Server", value=f"{duration.days} days", inline=False)
+    embed.set_thumbnail(url=member.avatar.url)
+    await interaction.response.send_message(embed=embed)
+
 
 
 bot.run(token)
