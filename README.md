@@ -3,7 +3,7 @@
 spacebot is an open-sourced discord bot made using nextcord python framework
 
 ## vision of spacebot
-the vision of spacebot is to make a fun bot and multipurpose bot
+the vision of spacebot is to make a fun and multipurpose bot
 
 ## current features
 the current features are:-
